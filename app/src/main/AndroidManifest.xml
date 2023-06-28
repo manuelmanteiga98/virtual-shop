@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_shoppingcart"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_shoppingcart_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTFG"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.notifications.NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.statistics.StatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.employees.EmployeeCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.employees.EmployeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.orders.AddItemOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.orders.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.orders.OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sales.AddItemSaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sales.SaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sales.SalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.inventory.CategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.inventory.ShowItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.inventory.EditItemActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.inventory.AddItemActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.inventory.InventoryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.auth.ResetPassActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.HomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.auth.RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.auth.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+    </application>
+
+</manifest>

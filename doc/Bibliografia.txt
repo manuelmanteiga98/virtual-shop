@@ -1,0 +1,26 @@
+// Firebase
+https://www.quora.com/How-do-I-register-a-users-Detail-in-firebase
+https://github.com/chandragithub2014/MyReferenceProject/blob/master/features/firebaseoprs/src/main/java/com/ref/firebaseoprs/viewmodels/FireBaseViewModel.kt
+
+// Dates and Time
+https://www.baeldung.com/java-date-to-localdate-and-localdatetime
+
+// MVVM
+https://medium.com/codex/fire-base-with-kotlin-mvvm-799fd954dea6
+https://iamgideon.medium.com/stop-passing-context-into-viewmodels-bb11b3f432fb
+https://dev.to/sandeepsatpute9271/resourcesrstring-in-viewmodel-in-android-553g
+
+// Aprender Kotlin y Android Studio
+https://cursokotlin.com/
+https://mouredev.com/
+https://developer.android.com/
+
+// Iconos
+https://pixabay.com/vectors/shopping-cart-grocery-basket-35594/
+
+// Estudio de mercado
+https://www.edisa.com/software-de-gestion-erp-supermercados/?gclid=EAIaIQobChMItPKdmZrt-wIVVLLVCh37CgOrEAAYAyAAEgLiYPD_BwE
+
+// Zxing
+https://github.com/journeyapps/zxing-android-embedded
+https://blog.logiscenter.com/tipos-codigos-de-barras-mas-comunes

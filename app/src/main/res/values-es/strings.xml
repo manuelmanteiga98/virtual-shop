@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi tienda virtual</string>
+    <string name="no">No</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="password_repeat">Repite la contraseña</string>
+    <string name="password_forgot">¿Olvidaste la contraseña?</string>
+    <string name="login">Entrar</string>
+    <string name="logout">Salir</string>
+    <string name="signup">Registrarse</string>
+    <string name="new_user">¿Eres nuevo?</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellidos</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="warning">Advertencia</string>
+    <string name="homePageTitle">Menú principal</string>
+    <string name="success">Exito</string>
+    <string-array name="job_type">
+        <item>Gerente</item>
+        <item>Trabajador</item>
+    </string-array>
+    <string name="mgr_email">Correo del gerente</string>
+    <string name="add">Añadir</string>
+    <string name="update">Actualizar</string>
+    <string name="select_image">Seleccionar imagen</string>
+    <string name="completed">Completadas</string>
+    <string name="not_completed">No completadas</string>
+    <string name="all">Todas</string>
+    <string name="actions">Acciones</string>
+    <string name="add_item_barcode">Añadir CB</string>
+
+    <!-- Recuperar contraseña -->
+    <string name="reset_pass_label">Introduce tu correo para recuperar la contraseña</string>
+    <string name="reset">Recuperar contraseña</string>
+    <string name="success_msg">Se ha enviado un correo de recuperación a tu dirección</string>
+
+    <!-- Inventario -->
+    <string name="inventory">Inventario</string>
+    <string name="code">Código</string>
+    <string name="cost">Coste</string>
+    <string name="price">PvP</string>
+    <string name="category">Categoría</string>
+    <string name="units">Unidades</string>
+    <string name="units_limit">Límite de unidades</string>
+    <string name="item_delete_msg">¿Seguro que quieres borrar este artículo?</string>
+    <string name="barcode_null">No se ha escaneado ningún código de barras</string>
+    <string name="barcode_scanner_prompt">Situa tu código de barras dentro del rectángulo</string>
+    <string name="item_replace_alert">El artículo ya existe y será reemplazado</string>
+    <string name="inventory_option_add">Añadir artículo</string>
+    <string name="inventory_option_delete">Borrar artículo</string>
+    <string name="inventory_option_edit">Editar artículo</string>
+    <string name="inventory_option_search">Buscar CB</string>
+    <string name="manage_categories">Gestionar categorías</string>
+    <string name="category_delete_dialog">¿Estás seguro de que deseas borrar esta categoría? </string>
+    <string name="generic">Genérico</string>
+    <string name="all_categories">Todas</string>
+
+    <!-- Ventas -->
+    <string name="sales">Ventas</string>
+    <string name="sales_option_new">Nueva venta</string>
+    <string name="current_units">Unidades disponibles</string>
+    <string name="sale_delete_msg">¿Seguro que quieres borrar esta venta?</string>
+    <string name="sale_complete_msg">¿Estás seguro de que quieres completar esta venta?</string>
+    <string name="delete_sale">Borrar venta</string>
+
+    <!-- Pedidos -->
+    <string name="orders">Pedidos</string>
+    <string name="orders_option_new">Nuevo pedido</string>
+    <string name="order_delete_msg">¿Seguro que quieres borrar este pedido?</string>
+    <string name="order_complete_msg">¿Estás seguro de que quieres completar este pedido?</string>
+    <string name="delete_order">Borrar pedido</string>
+
+    <!-- Empleados -->
+    <string name="employees">Empleados</string>
+    <string name="calendar">Calendario</string>
+    <string name="assignments">Asignaciones</string>
+    <string name="entry">Entrada</string>
+    <string name="exit">Salida</string>
+    <string name="details">Detalles</string>
+    <string-array name="assignment_opts">
+        <item>Mostrar detalles</item>
+        <item>Eliminar</item>
+    </string-array>
+    <string name="delete_assignment_msg">¿Estás seguro de que quieres borrar esta asignación?</string>
+
+    <!-- Estadísticas -->
+    <string name="statistics">Estadísticas</string>
+    <string name="registration_date">Fecha de registro</string>
+    <string name="number_employees">Número de empleados</string>
+    <string name="max_sale">Máxima compra</string>
+    <string name="min_sale">Mínima compra</string>
+    <string name="max_sales_day">Día con más ventas</string>
+    <string name="min_sales_day">Día con menos ventas</string>
+    <string name="max_cost">Artículo con coste máximo</string>
+    <string name="min_cost">Artículo con coste mínimo</string>
+    <string name="max_price">Artículo con precio máximo</string>
+    <string name="min_price">Artículo con precio mínimo</string>
+    <string name="biggest_category">Mayor categoría</string>
+
+    <!-- Notificaciones -->
+    <string name="notifications">Notificaciones</string>
+    <string name="read">Leídas</string>
+    <string name="unread">Sin leer</string>
+    <string name="units_limit_advice">La unidades han bajado de %1$d para el artículo %2$s</string>
+    <string name="new_assignment_notification">Nueva asignación</string>
+    <string name="new_assignment_notification_msg">Nueva asignación en la fecha %1$s</string>
+
+    <!-- Errores -->
+    <string name="error">Error</string>
+    <string name="error_msg">Se ha producido un error</string>
+    <string name="password_match">Las contraseñas no coinciden</string>
+    <string name="email_validation">El email tiene que ser válido</string>
+    <string name="password_blank">La contraseña no puede ser vacía</string>
+    <string name="name_blank">El nombre no puede estar vacío</string>
+    <string name="surname_blank">El campo apellidos no puede estar vacío</string>
+    <string name="mgr_validation">El correo del gerente no es válido</string>
+    <string name="mgr_not_found">No se encontró el correo del gerente</string>
+    <string name="not_mgr">El correo del gerente no pertenece a un gerente</string>
+    <string name="item_input_validation">Las unidades, el coste y el precio tienen que ser números</string>
+    <string name="item_not_found">No se encontró el artículo</string>
+    <string name="units_format_error">Las unidades no pueden ser menos que 0</string>
+    <string name="cost_format_error">El coste no puede ser menor que 0</string>
+    <string name="price_format_error">El precio no puede ser menor que 0</string>
+    <string name="code_blank">El código no puede estar vacío</string>
+    <string name="category_not_empty">La categoría no está vacía. No se puede borrar.</string>
+    <string name="sale_units_zero">Las unidades no pueden ser cero</string>
+    <string name="sale_units_null">Las unidades deben ser un número</string>
+    <string name="not_enough_units">No hay suficientes unidades</string>
+    <string name="sale_has_items">La venta tiene artículos</string>
+    <string name="empty_sale">La venta no puede estar vacía</string>
+    <string name="empty_order">El pedido no puede estar vacío</string>
+
+</resources>

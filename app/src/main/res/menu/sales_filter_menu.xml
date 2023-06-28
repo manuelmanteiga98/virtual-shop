@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/salesMenuNotCompleted"
+        android:title="@string/not_completed"
+        />
+    <item
+        android:id="@+id/salesMenuCompleted"
+        android:title="@string/completed"
+        />
+    <item
+        android:id="@+id/salesMenuAll"
+        android:title="@string/all"
+        />
+</menu>

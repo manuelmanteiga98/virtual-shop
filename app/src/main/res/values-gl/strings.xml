@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Miña tenda virtual</string>
+    <string name="no">Non</string>
+    <string name="email">Enderezo</string>
+    <string name="password">Contrasinal</string>
+    <string name="password_repeat">Repite o contrasinal</string>
+    <string name="password_forgot">Esqueceches o teu contrasinal?</string>
+    <string name="login">Entrar</string>
+    <string name="logout">Sair</string>
+    <string name="signup">Rexistrarse</string>
+    <string name="new_user">Novo usuario?</string>
+    <string name="name">Nome</string>
+    <string name="surname">Apelidos</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="warning">Coidado</string>
+    <string name="homePageTitle">Páxina principal</string>
+    <string name="success">Exito</string>
+    <string-array name="job_type">
+        <item>Xerente</item>
+        <item>Traballador</item>
+    </string-array>
+    <string name="mgr_email">Email do xerente</string>
+    <string name="add">Engadir</string>
+    <string name="update">Actualizar</string>
+    <string name="select_image">Seleccionar imaxe</string>
+    <string name="completed">Completadas</string>
+    <string name="not_completed">Non completadas</string>
+    <string name="all">Todas</string>
+    <string name="actions">Accions</string>
+    <string name="add_item_barcode">Engadir CB</string>
+
+    <!-- Email pass recovery -->
+    <string name="reset_pass_label">Introduce o teu enderezo electrónico para recuperar o teu contrasinal</string>
+    <string name="reset">Reiniciar contrasinal</string>
+    <string name="success_msg">Enviouse un correo de recuperación ao teu enderezo</string>
+
+    <!-- Inventario -->
+    <string name="inventory">Inventario</string>
+    <string name="code">Código</string>
+    <string name="cost">Custo</string>
+    <string name="price">Prezo</string>
+    <string name="category">Categoría</string>
+    <string name="units">Unidades</string>
+    <string name="units_limit">Units limit</string>
+    <string name="item_delete_msg">Seguro que queres borrar este artigo?</string>
+    <string name="barcode_null">Non se escaneou ningún código de barras</string>
+    <string name="barcode_scanner_prompt">Pon o teu código de barras dentro do marco</string>
+    <string name="item_replace_alert">O artigo xa existe e será sobrescrito</string>
+    <string name="inventory_option_add">Engadir artigo</string>
+    <string name="inventory_option_delete">Borrar artigo</string>
+    <string name="inventory_option_edit">Editar artigo</string>
+    <string name="inventory_option_search">Buscar CB</string>
+    <string name="manage_categories">Xestionar categorías</string>
+    <string name="category_delete_dialog">Estás seguro de que queres borrar esta categoría? </string>
+    <string name="generic">Xenérico</string>
+    <string name="all_categories">All</string>
+
+    <!-- Vendas -->
+    <string name="sales">Vendas</string>
+    <string name="sales_option_new">Nova venda</string>
+    <string name="current_units">Unidades dispoñibles</string>
+    <string name="sale_delete_msg">Seguro que queres borrar esta venda?</string>
+    <string name="sale_complete_msg">Estás seguro de que queres rematar esta venda?</string>
+    <string name="delete_sale">Borrar venda</string>
+
+    <!-- Pedidos -->
+    <string name="orders">Pedidos</string>
+    <string name="orders_option_new">Novo pedido</string>
+    <string name="order_delete_msg">Seguro que queres borrar este pedido?</string>
+    <string name="order_complete_msg">Estás seguro de que queres rematar este pedido?</string>
+    <string name="delete_order">Borrar pedido</string>
+
+    <!-- Empregados -->
+    <string name="employees">Empregados</string>
+    <string name="calendar">Calendario</string>
+    <string name="assignments">Asignacións</string>
+    <string name="entry">Entrada</string>
+    <string name="exit">Saída</string>
+    <string name="details">Detalles</string>
+    <string-array name="assignment_opts">
+        <item>Amosar detalles</item>
+        <item>Eliminar</item>
+    </string-array>
+    <string name="delete_assignment_msg">Estás seguro de que queres borrar esta asignación?</string>
+
+    <!-- Estatísticas -->
+    <string name="statistics">Estatísticas</string>
+    <string name="registration_date">Data de rexistro</string>
+    <string name="number_employees">Número de empregados</string>
+    <string name="max_sale">Máxima compra</string>
+    <string name="min_sale">Mínima compra</string>
+    <string name="max_sales_day">Día con máis vendas</string>
+    <string name="min_sales_day">Día con menos vendas</string>
+    <string name="max_cost">Artigo con custo máximo</string>
+    <string name="min_cost">Artigo con custo mínimo</string>
+    <string name="max_price">Artigo con prezo máximo</string>
+    <string name="min_price">Artigo con prezo mínimo</string>
+    <string name="biggest_category">Maior categoría</string>
+
+
+    <!-- Notificacións -->
+    <string name="notifications">Notificacións</string>
+    <string name="read">Lidas</string>
+    <string name="unread">Sin ler</string>
+    <string name="units_limit_advice">As unidades baixaron de %1$d para o artigo %2$s</string>
+    <string name="new_assignment_notification">Nova asignación</string>
+    <string name="new_assignment_notification_msg">Nova asignación na data %1$s</string>
+
+    <!-- Erros -->
+    <string name="error">Erro</string>
+    <string name="error_msg">Produciuse un erro</string>
+    <string name="password_match">Os contrasinais non coinciden</string>
+    <string name="email_validation">O enderezo ten que ser válido</string>
+    <string name="password_blank">O contrasinal non pode estar baleiro</string>
+    <string name="name_blank">O nome non pode estar baleiro</string>
+    <string name="surname_blank">O campo apelidos non pode estar baleiro</string>
+    <string name="mgr_validation">O correo do xerente non é válido</string>
+    <string name="mgr_not_found">Non se encontrou o correo do xerente</string>
+    <string name="not_mgr">O correo do xerente non pertence a un xerente</string>
+    <string name="item_input_validation">As unidades, o custo e o prezo teñen que ser números</string>
+    <string name="item_not_found">Non se encontrou o artigo</string>
+    <string name="units_format_error">As unidades non poden ser menores a 0</string>
+    <string name="cost_format_error">O custo non pode ser menor a 0</string>
+    <string name="price_format_error">O prezo non pode ser menor a 0</string>
+    <string name="code_blank">O código non pode estar baleiro</string>
+    <string name="category_not_empty">A categoría non se encontra baleira. Non se pode eliminar.</string>
+    <string name="sale_units_zero">As unidades non poden ser cero</string>
+    <string name="sale_units_null">As unidades deben ser un número</string>
+    <string name="not_enough_units">Non hai suficientes unidades</string>
+    <string name="sale_has_items">A venda ten artigos</string>
+    <string name="empty_sale">A venda non pode estar baleira</string>
+    <string name="empty_order">O pedido non pode estar baleiro</string>
+
+</resources>

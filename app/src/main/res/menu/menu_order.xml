@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/orderDelete"
+        android:title="@string/delete_order"/>
+    <item
+        android:id="@+id/orderAddBCManual"
+        android:icon="@drawable/complete"
+        android:title="@string/add_item_barcode" />
+    <item
+        android:id="@+id/orderAddBarcode"
+        android:icon="@drawable/camera"
+        app:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/orderComplete"
+        android:icon="@drawable/complete"
+        app:showAsAction="ifRoom"
+        android:title="" />
+</menu>

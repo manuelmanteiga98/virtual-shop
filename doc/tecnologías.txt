@@ -1,0 +1,9 @@
+Control de versiones: Git
+Memoria: Latex (overleaf)
+Diagramas: Dia
+Mockups: Pencil Project
+Gestión de proyectos: Project Libre
+Desarrollo: Android Studio, Kotlin 
+Gestión de dependencias: Gradle
+Autenticación y BD: Firebase 
+Códigos de barras: ZXing (Zebra Crossing)
