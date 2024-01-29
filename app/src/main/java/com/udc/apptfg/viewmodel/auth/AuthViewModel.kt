@@ -9,9 +9,8 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.udc.apptfg.model.auth.AuthModel
 import com.udc.apptfg.model.ErrorModel
+import com.udc.apptfg.util.Util
 import java.io.ByteArrayOutputStream
-import java.text.SimpleDateFormat
-import java.util.*
 
 
 class AuthViewModel : ViewModel() {
@@ -136,7 +135,7 @@ class AuthViewModel : ViewModel() {
         ).addOnCompleteListener {
             if (it.isSuccessful) {
                 authModel.postValue(AuthModel(email))
-                val regDate = getTodayDate()
+                val regDate = Util.getTodayDate()
                 db.collection("users").document(email).set(
                     hashMapOf(
                         "name" to name,
@@ -166,12 +165,6 @@ class AuthViewModel : ViewModel() {
             val jobType = user.getLong("jobtype")?.toInt()
             manager.postValue(jobType==0)
         }
-    }
-
-    private fun getTodayDate(): String {
-        val currentDate = Date()
-        val formatter = SimpleDateFormat("HH:mm:ss dd-MM-yyyy", Locale.getDefault())
-        return formatter.format(currentDate)
     }
 
 }

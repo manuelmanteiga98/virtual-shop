@@ -11,10 +11,16 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.udc.apptfg.model.ErrorModel
 import com.udc.apptfg.model.inventory.ItemModel
+import com.udc.apptfg.repositories.inventory.InventoryDataRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import java.io.ByteArrayOutputStream
 import java.io.File
+import javax.inject.Inject
 
-class InventoryViewModel : ViewModel() {
+@HiltViewModel
+class InventoryViewModel @Inject constructor(
+    private val inventoryDataRepository: InventoryDataRepository
+): ViewModel() {
 
     private val db = FirebaseFirestore.getInstance()
     private val storage = FirebaseStorage.getInstance()
@@ -27,25 +33,26 @@ class InventoryViewModel : ViewModel() {
     var categories = MutableLiveData<ArrayList<String>>()
 
     fun addItem(item: ItemModel, builder: AlertDialog.Builder, texts: Map<String, String>) {
-        if (auth.currentUser != null) {
-            val email: String = auth.currentUser!!.email.toString()
-            val userRef = db.collection("users").document(email)
-            userRef.collection("items").document(item.id).get().addOnSuccessListener { result ->
-                if (result.exists()) {
-                    builder.setMessage(texts["msg"])
-                    builder.setPositiveButton(texts["accept"]) { _: DialogInterface, _: Int ->
-                        addItemAux(email, item)
-                    }
-                    builder.setNegativeButton(texts["cancel"], null)
-                    val dialog: AlertDialog = builder.create()
-                    dialog.show()
-                } else {
-                    addItemAux(email, item)
-                }
-            }.addOnFailureListener {
-                finish.postValue(true)
-            }
-        } else finish.postValue(true)
+        inventoryDataRepository.addItem(item){}
+//        if (auth.currentUser != null) {
+//            val email: String = auth.currentUser!!.email.toString()
+//            val userRef = db.collection("users").document(email)
+//            userRef.collection("items").document(item.id).get().addOnSuccessListener { result ->
+//                if (result.exists()) {
+//                    builder.setMessage(texts["msg"])
+//                    builder.setPositiveButton(texts["accept"]) { _: DialogInterface, _: Int ->
+//                        addItemAux(email, item)
+//                    }
+//                    builder.setNegativeButton(texts["cancel"], null)
+//                    val dialog: AlertDialog = builder.create()
+//                    dialog.show()
+//                } else {
+//                    addItemAux(email, item)
+//                }
+//            }.addOnFailureListener {
+//                finish.postValue(true)
+//            }
+//        } else finish.postValue(true)
     }
 
     private fun addItemAux(email: String, item: ItemModel) {

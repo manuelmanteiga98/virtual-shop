@@ -5,8 +5,7 @@ import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.udc.apptfg.model.orders.OrderModel
-import java.text.SimpleDateFormat
-import java.util.*
+import com.udc.apptfg.util.Util
 import kotlin.collections.ArrayList
 
 class OrdersViewModel: ViewModel() {
@@ -21,7 +20,7 @@ class OrdersViewModel: ViewModel() {
             val email = auth.currentUser!!.email.toString()
             val userRef = db.collection("users").document(email)
             val ordersRef = userRef.collection("orders")
-            val date = getCurrentDate()
+            val date = Util.getTodayDate()
             val data = hashMapOf(
                 "date" to date,
                 "completed" to false
@@ -56,9 +55,4 @@ class OrdersViewModel: ViewModel() {
         }
     }
 
-    private fun getCurrentDate(): String {
-        val currentDate = Date()
-        val formatter = SimpleDateFormat("HH:mm:ss dd-MM-yyyy", Locale.getDefault())
-        return formatter.format(currentDate)
-    }
 }

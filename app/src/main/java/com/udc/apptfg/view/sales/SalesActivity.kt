@@ -14,9 +14,6 @@ import com.udc.apptfg.model.sales.SaleModel
 import com.udc.apptfg.view.sales.adapter.SaleAdapter
 import com.udc.apptfg.viewmodel.sales.SalesViewModel
 import java.text.SimpleDateFormat
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import java.util.Collections
 import java.util.Locale
 
 

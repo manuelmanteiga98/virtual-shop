@@ -50,26 +50,34 @@ class StatisticsViewModel : ViewModel() {
     private fun getMaxMinSalesDay() {
         val userRef = db.collection("users").document(email)
         val salesRef = userRef.collection("sales")
+
         salesRef.get().addOnSuccessListener { sales ->
+            val days = HashMap<String, Int>()
+
             for (sale in sales) {
-                var days = HashMap<String, Int>()
-                for (sale in sales) {
-                    val day = sale.getString("date").toString().split(" ")[1]
-                    if (days.containsKey(day)) days[day] = days[day]!!.toInt() + 1
-                    else {
-                        days[day] = 1
-                    }
+                // We're removing the HH:mm:ss part
+                val day = sale.getString("date").toString().split(" ")[1]
+
+                // We search the date on the hashmap and then we increment the counter
+                if (days.containsKey(day)) {
+                    days[day] = days[day]!!.toInt() + 1
+                } else {
+                    days[day] = 1
                 }
-                if (days.size > 0) {
-                    statisticsModel.maxSalesDay =
-                        days.maxWith { x, y -> x.value.compareTo(y.value) }.key
-                    statisticsModel.minSalesDay =
-                        days.minWith { x, y -> x.value.compareTo(y.value) }.key
-                    statistics.postValue(statisticsModel)
-                }
+            }
+
+            if (days.isNotEmpty()) {
+                val maxSalesDay = days.maxByOrNull { it.value }?.key
+                val minSalesDay = days.minByOrNull { it.value }?.key
+
+                statisticsModel.maxSalesDay = maxSalesDay
+                statisticsModel.minSalesDay = minSalesDay
+
+                statistics.postValue(statisticsModel)
             }
         }
     }
+
 
     private fun getEmployees() {
         val usersRef = db.collection("users")

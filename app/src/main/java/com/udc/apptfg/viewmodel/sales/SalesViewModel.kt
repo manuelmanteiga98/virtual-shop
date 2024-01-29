@@ -6,10 +6,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.udc.apptfg.model.ErrorModel
 import com.udc.apptfg.model.sales.SaleModel
-import java.text.SimpleDateFormat
-import java.util.*
+import com.udc.apptfg.util.Util
 import kotlin.collections.ArrayList
-import kotlin.time.Duration.Companion.hours
 
 class SalesViewModel : ViewModel() {
 
@@ -24,7 +22,7 @@ class SalesViewModel : ViewModel() {
             val email = auth.currentUser!!.email.toString()
             val userRef = db.collection("users").document(email)
             val salesRef = userRef.collection("sales")
-            val date = getTodayDate()
+            val date = Util.getTodayDate()
             val data = hashMapOf(
                 "date" to date,
                 "completed" to false,
@@ -59,12 +57,6 @@ class SalesViewModel : ViewModel() {
                 sales.postValue(saleArray)
             }
         }
-    }
-
-    private fun getTodayDate(): String {
-        val currentDate = Date()
-        val formatter = SimpleDateFormat("HH:mm:ss dd-MM-yyyy", Locale.getDefault())
-        return formatter.format(currentDate)
     }
 
 }

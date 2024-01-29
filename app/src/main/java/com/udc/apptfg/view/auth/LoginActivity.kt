@@ -8,10 +8,16 @@ import androidx.activity.viewModels
 import com.udc.apptfg.R
 import com.udc.apptfg.view.HomeActivity
 import com.udc.apptfg.databinding.ActivityLoginBinding
+import com.udc.apptfg.util.EjemploDagger
 import com.udc.apptfg.viewmodel.auth.AuthViewModel
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
 
+    @Inject
+    lateinit var ejemploDagger: EjemploDagger;
     private lateinit var binding: ActivityLoginBinding
     private val authViewModel: AuthViewModel by viewModels()
 

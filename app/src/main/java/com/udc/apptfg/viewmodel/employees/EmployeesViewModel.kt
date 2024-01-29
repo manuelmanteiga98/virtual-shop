@@ -40,7 +40,7 @@ class EmployeesViewModel: ViewModel() {
         }
     }
 
-    fun getPhotos(){
+    private fun getPhotos(){
         for (employee in employeeList){
                 val localfile = File.createTempFile(employee.email, "jpg")
                 val path = employee.email + "/" + employee.email
